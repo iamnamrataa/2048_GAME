@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <base href="/YOUR_REPO_NAME/">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>2048</h1>
+        <div class="header">
+            <div class="scores">
+                <div class="score-container">
+                    <div class="score-title">SCORE</div>
+                    <div id="score">0</div>
+                </div>
+                <div class="score-container">
+                    <div class="score-title">BEST</div>
+                    <div id="best-score">0</div>
+                </div>
+            </div>
+            <button id="restart-btn" class="restart-btn">New Game</button>
+        </div>
+        
+        <div class="game-message">
+            <p id="message"></p>
+            <div class="message-buttons">
+                <button id="keep-playing">Keep going</button>
+                <button id="try-again">Try again</button>
+            </div>
+        </div>
+        
+        <div class="grid-container">
+            <div class="grid"></div>
+        </div>
+        
+        <div class="instructions">
+            <p><strong>How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they merge into one!</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
